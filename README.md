@@ -4,8 +4,9 @@
 
 ---
 
-| **Project Title** | [Native_Doc_Dartifier: LLM-powered translation of Android (Java/Kotlin) docs into Dart using JNIgen bindings ](https://summerofcode.withgoogle.com/programs/2025/projects/8F8TuxpG) |
+| Project Details |  |
 |------------|-------------------------|
+| **Project Title** | [Native_Doc_Dartifier: LLM-powered translation of Android (Java/Kotlin) docs into Dart using JNIgen bindings ](https://summerofcode.withgoogle.com/programs/2025/projects/8F8TuxpG) |
 | **Contributor**      | [Marshelino Maged](https://github.com/marshelino-maged) |
 | **Organization**     | [Dart](https://summerofcode.withgoogle.com/programs/2025/organizations/dart) |
 | **Mentors**          | [Hossein Yousefi](https://github.com/HosseinYousefi), [Daco Harkes](https://github.com/dcharkes) |
@@ -61,7 +62,6 @@ During GSoC 2025, my work focused on making Java/Kotlin → Dart translation wit
 
 ## 📂 Contributions
 
-✅ Merged / 🔄 Open / ❌ Closed
 ### Pull Requests
 | # | Title | Status |
 |---|-------|--------|
@@ -83,28 +83,22 @@ During GSoC 2025, my work focused on making Java/Kotlin → Dart translation wit
 | 16 | [Experiment ObjectBox as VectorDB for RAG](https://github.com/marshelino-maged/native/pull/16) | ❌ Closed |
 | 17 | [[native_doc_dartifier] Adding RAG Option](https://github.com/dart-lang/native/pull/2584) | 🔄 Open |
 
-
-### Issues Opened / Discussed
-| # | Repository | Title | Status |
-|---|------------|-------|--------|
-| 1 | [repo-name](URL) | Issue title | ✅ Closed / 🔄 Open |
-| 2 | … | … | … |
-
 ---
 
 ## 🚀 Outcome
-<!-- Summarize what you delivered by the end of GSoC:
-- New features/packages published
-- Tools created
-- Enhancements merged upstream
-- Any measurable impact (e.g., performance, usability, new adoption) -->
+Dart developers can now more easily leverage Android documentation examples in their projects with minimal edits. This project successfully delivered a working pipeline that translates Java/Kotlin documentation snippets into JNIgen-compatible Dart code using an LLM. By addressing challenges such as large binding sizes, limited LLM context, and the non-deterministic nature of model outputs, the project introduced summarization, retry-fix prompting, and a testing flow to ensure reliability. The integration of Retrieval-Augmented Generation (RAG) further enhanced context handling, making translations more concise and accurate. As a result.
+
 
 ---
 
 ## 🔮 Future Work
-- Item 1  
-- Item 2  
-- Item 3  
+- Explore alternative RAG techniques, such as:
+  - **Maximal Marginal Relevance (MMR)** for balancing relevance and diversity.  
+  - **Decomposed queries** to improve retrieval quality.  
+- Build a **Chrome extension** that automatically detects Android documentation snippets and translates them into Dart.  
+- Add an option to **auto-generate bindings** using JNIgen to further streamline the workflow.  
+
+
 
 ---
 
