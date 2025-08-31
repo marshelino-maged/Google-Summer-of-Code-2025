@@ -98,29 +98,15 @@ Dart developers can now more easily leverage Android documentation examples in t
 - Build a **Chrome extension** that automatically detects Android documentation snippets and translates them into Dart.  
 - Add an option to **auto-generate bindings** using JNIgen to further streamline the workflow.  
 
-
-
----
-
-## ⚡ Challenges
-- Challenge 1 and how you solved/approached it.  
-- Challenge 2 and how you solved/approached it.  
-
----
-
-## 📚 Things I Learned
-1. Lesson 1  
-2. Lesson 2  
-3. Lesson 3  
-
 ---
 
 ## 🙏 Acknowledgements
-I would like to thank my mentors, the Dart team, the open-source community, and Google Summer of Code for this opportunity.  
-
+I would like to thank my mentors, **Hossein** and **Daco**, who were the cornerstone of this project. Hossein supported me in making my very first open-source contribution, and together they guided me with advice and insights while still giving me the freedom to experiment. I learned so much from their way of thinking and problem-solving, and their mentorship shaped both this project and my growth as a software engineer. This summer has been an amazing journey, and I’m excited to keep contributing to the Dart community and beyond.  
+Happy Coding! ✨🚀💙
+ 
 ---
 
 ## 📬 Contact
-- GitHub: [your-handle](https://github.com/your-handle)  
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/your-handle)  
-- Email: [your-email@example.com](mailto:your-email@example.com)  
+- GitHub: [marshelino-maged](https://github.com/marshelino-maged)  
+- LinkedIn: [Marshelino Maged](https://www.linkedin.com/in/marshelino-maged-2935b91b4)  
+- Email: [marshelinomaged@gmail.com](marshelinomaged@gmail.com)  
