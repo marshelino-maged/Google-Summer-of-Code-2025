@@ -8,7 +8,7 @@
 |------------|-------------------------|
 | **Project Title** | [Native_Doc_Dartifier: LLM-powered translation of Android (Java/Kotlin) docs into Dart using JNIgen bindings ](https://summerofcode.withgoogle.com/programs/2025/projects/8F8TuxpG) |
 | **Contributor**      | [Marshelino Maged](https://github.com/marshelino-maged) |
-| **Organization**     | [Dart](https://summerofcode.withgoogle.com/programs/2025/organizations/dart) |
+| **Organization**     | [Dart Programming Language](https://summerofcode.withgoogle.com/programs/2025/organizations/dart) |
 | **Mentors**          | [Hossein Yousefi](https://github.com/HosseinYousefi), [Daco Harkes](https://github.com/dcharkes) |
 | **Project Link**    | [https://github.com/dart-lang/native/tree/main/pkgs/native_doc_dartifier](https://github.com/dart-lang/native/tree/main/pkgs/native_doc_dartifier) |
 
@@ -37,8 +37,8 @@ During GSoC 2025, my work focused on making Java/Kotlin → Dart translation wit
   - Compared generated Dart bindings with the original Java APIs to understand differences and challenges in translation.
 
 - **Handling LLM Context Limitations**
-  - Since the generated bindings are very large and exceed the LLM (Gemini) context limit (~1M tokens), I designed a method to summarize them.
-  - Extracted only the **public API AST** using the Dart analyzer package, keeping the LLM input concise and relevant.
+  - Since the generated bindings are very large and will exceed the LLM (Gemini) context limit (~1M tokens), we designed a method to summarize them.
+  - Extracted only the **public API AST** using the Dart `analyzer` package, keeping the LLM input concise and relevant.
 
 - **Researching Best Practices**
   - Reviewed academic papers and resources on **prompting techniques**, **structured generation**, **code translation** and **error correction** to maximize LLM translation quality.
@@ -86,7 +86,7 @@ During GSoC 2025, my work focused on making Java/Kotlin → Dart translation wit
 ---
 
 ## 🚀 Outcome
-Dart developers can now more easily leverage Android documentation examples in their projects with minimal edits. This project successfully delivered a working pipeline that translates Java/Kotlin documentation snippets into JNIgen-compatible Dart code using an LLM. By addressing challenges such as large binding sizes, limited LLM context, and the non-deterministic nature of model outputs, the project introduced summarization, retry-fix prompting, and a testing flow to ensure reliability. The integration of Retrieval-Augmented Generation (RAG) further enhanced context handling, making translations more concise and accurate. As a result.
+Dart developers can now more easily leverage Android documentation examples in their projects with minimal edits. This project successfully delivered a working pipeline that translates Java/Kotlin documentation snippets into JNIgen-compatible Dart code using an LLM. By addressing challenges such as large binding sizes, limited LLM context, and the non-deterministic nature of model outputs, the project introduced summarization, retry-fix prompting, and a testing flow to ensure reliability. The integration of Retrieval-Augmented Generation (RAG) further enhanced context handling, making translations more concise and accurate as a result.
 
 
 ---
@@ -94,15 +94,21 @@ Dart developers can now more easily leverage Android documentation examples in t
 ## 🔮 Future Work
 - Explore alternative RAG techniques, such as:
   - **Maximal Marginal Relevance (MMR)** for balancing relevance and diversity.  
-  - **Decomposed queries** to improve retrieval quality.  
-- Build a **Chrome extension** that automatically detects Android documentation snippets and translates them into Dart.  
-- Add an option to **auto-generate bindings** using JNIgen to further streamline the workflow.  
+  - **Decomposed queries** to improve retrieval quality.
+  - https://github.com/dart-lang/native/issues/2550
+- Build a **Chrome extension** that automatically detects Android documentation snippets and translates them into Dart.
+  - https://github.com/dart-lang/native/issues/1240 
+- Find a way to improve incomplete snippets translation
+  - https://github.com/dart-lang/native/issues/2450 
 
 ---
 
 ## 🙏 Acknowledgements
-I would like to thank my mentors, **Hossein** and **Daco**, who were the cornerstone of this project. Hossein supported me in making my very first open-source contribution, and together they guided me with advice and insights while still giving me the freedom to experiment. I learned so much from their way of thinking and problem-solving, and their mentorship shaped both this project and my growth as a software engineer. This summer has been an amazing journey, and I’m excited to keep contributing to the Dart community and beyond.  
-Happy Coding! ✨🚀💙
+I would like to thank my mentors, **Hossein** and **Daco**, who were the cornerstone of this project. Hossein supported me in making my very first open-source contribution, and together they guided me with advice and insights while still giving me the freedom to experiment. I learned a great deal from their approach to thinking and problem-solving, and their mentorship significantly influenced both this project and my growth as a software engineer. 
+
+This summer has been an amazing journey, and I’m excited to keep contributing to the Dart community and beyond.
+
+From challenges ⚡ to solutions ✅, from code 💻 to community 🤗 — GSoC 2025 was unforgettable 🚀🌱
  
 ---
 
